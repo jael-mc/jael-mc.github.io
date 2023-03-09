@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mi CV</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/909/909212.png?w=360">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+
+</head>
+
+<body class="body">
+
+	<header>
+		<script src="js/script.js"></script>
+		<div class="container">
+			<div class="row">
+				<article class="col-12 col-md-6 col-lg-6">
+					<img src="imagenes/im_perfil.jpg" alt="perfil" class="foto" width="200" height="200">
+					
+					<div class="ctn">					
+						<h3>Contacto</h3>	
+						<span class="ocultar" id="text">
+							<li>
+								<span><i class="fa fa-phone"> Celular</i>:+1 23456789</span>
+							</li>
+							<li>
+								<span><i class="fa fa-envelope"> Mail:</i> sally.mccoy@example.com </span>
+								
+							</li>
+						</span>
+						<button class="btn" id="text_btn">Mostrar más</button>
+
+					</div>
+
+				</article>
+
+				
+				<article id="datos" class="col-12 col-md-6 col-lg-6col-6">
+
+					<h1 class="text-danger">Sally Mccoy</h1>
+					<p class="text-secondary"><b>Zona de residencia</b>: New York<br>
+					<b>Fecha de Nacimiento</b>: 10/1/1993<br>
+					<b>Edad</b>: 30 años<br>
+					<b>DNI</b>: (368) 451-8607<br>
+					<b>Domicilio</b>: 8975 Central St <br>
+		
+				</article>
+			</div>
+			
+		</div>
+	</header>
+
+	<div class="container">
+        <nav>
+            <ul class="tabs">
+                <li><a href="#1"><i class="fa fa-graduation-cap"></i><span class=" text"> Formacion academica</span></a></li>
+                <li><a href="#2"><i class="fa fa-briefcase"></i><span class="text"> Experiencia laboral</span></a></li>
+                <li><a href="#3"><i class="fa fa-laptop" ></i><span class="text"> Herramientas Informaticas</span></a></li>
+                <li><a href="#4"><i class="fa fa-comments" ></i><span class="text"> Idiomas</span></a></li>
+                <li><a href="#5"><i class="fa fa-phone" ></i> <span class="text"> Contactar ahora</span></a></li>
+            </ul>
+        </nav>
+
+    </div>
+	<section>
+		<div class="container">
+			<div class="row">
+
+				<div class="col-12 col-lg-6">
+					<a name="1" id="a">
+					<div class="card">
+						<div class="card-body">
+							<img src="imagenes/formacion_acad.jfif" alt="academia">
+							<h5 class="card-tittle text-info">Formaciòn Academica</h5>
+							<p class="card-text"><b class="text-dark">Fecha</b>
+							<li>2020-2021: Curso de informatica</li> 
+							<li>2005-2010: Estudios secundarios.</li>
+							<li>2011-2012: Curso de Contabilidad</li>
+							</p>
+			
+						 </div>
+ 					</div>
+				</div>	
+
+				<div class="col-12 col-lg-6">
+					<a name="2" id="a">
+					<div class="card">
+						<div class="card-body">
+							<img  class="image" src="imagenes/experiencia_lab.jpg" alt="laboral" height="200" width="250">
+							<h5 class="card-tittle text-info"> Experiencia Llaboral</h5>
+							<p class="card-text"><b class="text-dark">Fecha</b>
+							<li>Realizar asientos contables, balances y conciliaciones bancarias</li>
+							<li>Cuidar niños.</li>
+							<li>Pasear perros</li>
+							</p>
+							
+						</div>
+					</div>
+				</div> 
+
+				<div class="col-12 col-lg-6">
+					<a name="3" id="a">
+					<div class="card">
+						<div class="card-body">
+							<img  class="image" src="imagenes/herramientas_info.jfif" alt="">
+							<h5 class="card-tittle text-info">Herramientas Informaticas</h5>
+							<p class="card-text"><b class="text-dark">Fecha</b>
+								<li>Diseño web (html y css) </li>
+								<li>Exel: nivel medio </li>
+							</p>
+					
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-lg-6">
+					<a name="4" id="a">
+					<div class="card">
+						<div class="card-body">
+							<img class="image" src="imagenes/idiomas.png" alt="">
+							<h5 class="card-tittle text-info">Idioma(s)</h5>
+							<p class="card-text"><b class="text-dark">Fecha</b>
+								<li>Inglés: Nivel básico</li>
+								<li>Francés: Nivel medio </li>
+							</p>
+						</div>
+					</div>
+				</div><!--Fin del col-->
+  
+			</div>
+		</div>
+	</section>
+
+
+	<div class="container">
+		<a name="5" id ="a"></a>
+        <form action="" class="formulario" id="formulario">
+            <legend><strong>Ingrese sus datos</strong>  </legend>
+
+            <input type="text" class="form_input" name="name" placeholder="Nombre" required>
+            <input type="text" class="form_input" name="surname" placeholder="Apellido" required>
+            <input type="email" class="form_input" name=" email" placeholder="Ingrese su mail" required>
+            <input type="text" class="form_input" name="telefono" placeholder="Teléfono" required>
+            <input type="text" class="form_input" name="enpresa" placeholder="Nombre de la empresa" required>
+            <textarea name="comments" id="comentario" cols="50" rows="5" placeholder="Motivo del contacto " required></textarea>
+            <input type="submit" class="form_submit" id="boton" value="Enviar">
+            <div class="form_respuesta none" id="text" > 
+                <p>Datos enviados</p>
+            </div> 
+        </form>
+       
+    </div>										
+
+
+</body>
+</html>
+
